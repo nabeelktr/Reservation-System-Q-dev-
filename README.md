@@ -30,7 +30,7 @@ cd Reservation-System-Q-dev-
 ```
 ## Client Side (Production)
 ```bash
-cd frontend
+cd client
 npm install
 npm run build
 npm start
