@@ -15,7 +15,7 @@ import { Toaster, toast } from "sonner";
 
 type Props = {};
 
-const page = (props: Props) => {
+const Page = (props: Props) => {
   const [open, setOpen] = useState(false);
   const [booking, setBooking] = useState<any>();
   const {
@@ -147,4 +147,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Page;
