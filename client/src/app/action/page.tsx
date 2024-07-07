@@ -13,7 +13,7 @@ import { Toaster, toast } from "sonner";
 
 type Props = {};
 
-const page = (props: Props) => {
+const Page = (props: Props) => {
   const [open, setOpen] = useState(false);
   const [room, setRoom] = useState<any>();
   const {
@@ -25,7 +25,7 @@ const page = (props: Props) => {
     useChangeRoomStatusMutation();
   const handleRoomStatus = async () => {
     try {
-      await changeStatus({room});
+      await changeStatus({ room });
     } catch {
       console.log(room);
     }
@@ -55,7 +55,7 @@ const page = (props: Props) => {
         const current = info.getValue();
         const handleStatusChange = () => {
           setRoom(info.row.original.roomNumber);
-          setOpen(true)
+          setOpen(true);
         };
         return (
           <select
@@ -86,7 +86,6 @@ const page = (props: Props) => {
       <div className="fixed w-full z-[99]">
         <Header activeItem={2} />
       </div>
-
       <div className="h-32"></div>
       {actions && (
         <div
@@ -111,4 +110,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Page;
