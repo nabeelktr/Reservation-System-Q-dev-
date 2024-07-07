@@ -108,13 +108,51 @@ export default class AdminController {
         (room: any) => room.number === data.roomNumber
       );
       room.bookings.forEach((booking: any) => {
-        if(booking.date === data.date && booking.employeeId === data.employeeId){
-            booking.status = "cancelled"
+        if (
+          booking.date === data.date &&
+          booking.employeeId === data.employeeId
+        ) {
+          booking.status = "cancelled";
         }
-      })
-      res.status(StatusCode.OK).json({message: "success"});
+      });
+      res.status(StatusCode.OK).json({ message: "success" });
     } catch (error: any) {
-        console.log(error);
+      res
+        .status(StatusCode.InternalServerError)
+        .json({ message: "Internal Server Error" });
+    }
+  };
+
+  getActions = async (req: Request, res: Response) => {
+    try {
+      const allActions: any[] = [];
+      this.rooms.forEach((room: any) => {
+        allActions.push({
+          roomNumber: room.number,
+          totalBookings: room?.bookings.length,
+          status: room.status,
+        });
+      });
+      res.status(StatusCode.OK).json(allActions);
+    } catch (error: any) {
+      res
+        .status(StatusCode.InternalServerError)
+        .json({ message: "Internal Server Error" });
+    }
+  };
+
+  changeRoomStatus = async (req: Request, res: Response) => {
+    try {
+      const  {room: roomNumber}  = req.body;
+      const room: any = this.rooms.find(
+        (room: any) => room.number === roomNumber
+      );
+      if (room) {
+        room.status = room.status === "available" ? "closed" : "available";
+      }
+      res.status(StatusCode.OK).json({ message: "success" });
+    } catch (error: any) {
+      console.log(error);
       res
         .status(StatusCode.InternalServerError)
         .json({ message: "Internal Server Error" });
