@@ -14,7 +14,7 @@ const RoomCard = ({room}: Props) => {
           <div className="grid md:grid-cols-3 grid-cols-2 gap-5">
             <div className="md:col-span-1 flex items-center">
               <img
-                src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                src={room?.imageUrl}
                 alt="ui/ux review check"
                 className="overflow-hidden rounded-md"
               />

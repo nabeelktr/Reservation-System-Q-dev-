@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Header from "../components/Header";
 import Heading from "../utils/Heading";
@@ -14,10 +14,7 @@ export default function Home() {
         title="Home"
       />
       <div className="fixed w-full z-[99]">
-
-      <Header
-        activeItem={activeItem}
-        />
+        <Header activeItem={activeItem} />
       </div>
       <HomePage />
     </>

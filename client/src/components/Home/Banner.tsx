@@ -2,17 +2,17 @@
 import React, { useState } from "react";
 import DatePicker from "../DatePicker/DatePicker";
 import { Toaster, toast } from "sonner";
-import dateValidationSchema from "../../utils/yupSchemas";
+import {dateValidationSchema} from "../../utils/yupSchemas";
 
 
 type Props = {
-  fetchRooms: (value: Date | null) => void;
+  fetchRooms: (value: Date | any) => void;
 };
 
 const Banner: React.FC<Props> = ({fetchRooms}) => {
   const [value, setValue] = useState({
-    startDate: null,
-    endDate: null
+    startDate: new Date().toISOString().substr(0, 10),
+    endDate: new Date().toISOString().substr(0, 10)
   });
   const [shake, setShake] = useState(false);
 
