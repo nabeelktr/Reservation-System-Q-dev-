@@ -6,6 +6,9 @@ import cookieParser from "cookie-parser";
 import { errorHandler } from "@nabeelktr/error-handler";
 import { limiter } from "./utils/rateLimitter";
 import "dotenv/config"
+import adminRoute from "./routes/adminRoute";
+import bodyParser from "body-parser";
+
 
 class App {
   public app: Application;
@@ -18,10 +21,11 @@ class App {
 
   private applyMiddleware(): void {
     this.app.use(express.json());
+    this.app.use(bodyParser.urlencoded({ extended: true }));
     this.app.use(
       cors({
-        origin: "*",
-        credentials: true,
+        origin: "http://localhost:3000",
+        credentials: true
       })
     );
     this.app.use(logger("dev"));
@@ -31,7 +35,7 @@ class App {
   }
 
   private routes(): void {
-    // this.app.use("/api/v1/user", userRoute);
+    this.app.use("/api", adminRoute);
   }
 
   public startServer(port: number): void {

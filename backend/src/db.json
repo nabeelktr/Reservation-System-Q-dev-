@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "number": 101,
+    "type": "Single",
+    "pricePerNight": 100,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/371327937.webp?k=e78acd88b2fc03f05d28ce217466f0243733c87775a219c230bc221f0f48c159&o=",
+    "bookings": [
+      {
+        "date": "2024-07-04",
+        "employeeName": "John Doe",
+        "employeeId": "E001",
+        "status": "success"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "number": 102,
+    "type": "Double",
+    "pricePerNight": 150,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/568757225.webp?k=a7a0503f667def7d9d0cd92addef5f893e688a8a0297c50780903b8d49cfe266&o=",
+    "bookings": [
+      {
+        "date": "2024-07-05",
+        "employeeName": "Jane Smith",
+        "employeeId": "E002",
+        "status": "cancelled"
+
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 3,
+    "number": 103,
+    "type": "Suite",
+    "pricePerNight": 300,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/540227451.webp?k=1c5c499b619098b47ad9809258ae8cc1203394b9154c4e3a6bd3051ade595073&o=",
+    "bookings": [
+      {
+        "date": "2024-07-06",
+        "employeeName": "Alice Johnson",
+        "employeeId": "E003",
+        "status": "success"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 4,
+    "number": 104,
+    "type": "Single",
+    "pricePerNight": 100,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/497367173.webp?k=743c32e3f764f9b09ca216576cc166a05631e6ad30bccda0ca03705123868d97&o=",
+    "bookings": [
+      {
+        "date": "2024-07-05",
+        "employeeName": "Bob Brown",
+        "employeeId": "E004",
+        "status": "success"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 5,
+    "number": 105,
+    "type": "Double",
+    "pricePerNight": 150,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/560025539.webp?k=57cce1d8388547a852d4f0d7edcc0b10b11a9e210a30188a984d72dbdb4216a2&o=",
+    "bookings": [
+      {
+        "date": "2024-07-04",
+        "employeeName": "Charlie Davis",
+        "employeeId": "E005",
+        "status": "success"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 6,
+    "number": 106,
+    "type": "Single",
+    "pricePerNight": 100,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/531653609.webp?k=67e85e4bed189ba5aeb21a868cec89672b8cc510315500ff5495d13cf98c658b&o=",
+    "bookings": [],
+    "status": "available"
+  },
+  {
+    "id": 7,
+    "number": 107,
+    "type": "Suite",
+    "pricePerNight": 300,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/387952524.webp?k=46ab0826b2201c5683fa545e0c5536552fc8c88bf3dd1435d41516e1726acc0c&o=",
+    "bookings": [],
+    "status": "available"
+  },
+  {
+    "id": 8,
+    "number": 108,
+    "type": "Single",
+    "pricePerNight": 100,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/528113446.webp?k=ffd4a446aaa5752da8ff81bdec62dfb88709cada3bb3563117edc462b67ab42e&o=",
+    "bookings": [],
+    "status": "available"
+  },
+  {
+    "id": 9,
+    "number": 109,
+    "type": "Double",
+    "pricePerNight": 150,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/551338282.webp?k=4d576472d0de1266d8ebf1ee159cb7b1332e0d8c188bf75a88ecbad5e9383ded&o=",
+    "bookings": [],
+    "status": "available"
+  },
+  {
+    "id": 10,
+    "number": 110,
+    "type": "Suite",
+    "pricePerNight": 300,
+    "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/square600/531597550.webp?k=ea76633d093d914d97e744be2489ab54a18bd72d2b08724d2e55b36a68adf5c7&o=",
+    "bookings": [],
+    "status": "available"
+  }
+]
